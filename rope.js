@@ -6,13 +6,13 @@ class Rope{
             stiffness:0.04,
             length:300    
         }
-        this.Rope = Constraint.create(options);
+        this.rope = Constraint.create(options);
         this.pointB=pointB
-        World.add(world, this.Rope);
+        World.add(world, this.rope);
     }
 
     display(){
-        var pointA = this.Rope.bodyA.position;
+        var pointA = this.rope.bodyA.position;
         var pointB = this.pointB;
         strokeWeight(3);
         
